@@ -7,8 +7,9 @@ import Cart from '../Cart/Cart';
 
 const Shop = () => { 
      const first15 = fakeData.slice(0,15);
-     const [products, setProducts] = useState(first15);
+     const [products, ] = useState(first15);
      const [cart, setCart] = useState([]);
+     
      const handleAddProduct = (product) => {
          const newCart = [...cart, product];
          setCart(newCart);
